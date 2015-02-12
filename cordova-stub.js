@@ -181,6 +181,13 @@
             };
         };
         
+        // KEYBOARD
+        
+        cordova.plugins.Keyboard = {
+            open:function() {},
+            close:function() {},
+            hideKeyboardAccessoryBar:function() {}
+        }
 
     }
 
