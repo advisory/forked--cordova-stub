@@ -83,7 +83,7 @@
             
             local: {
                 
-                hasPermisson:function() {
+                hasPermission:function() {
                     
                 },
                 promptForPermission:function() {
