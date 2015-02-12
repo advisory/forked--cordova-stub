@@ -7,7 +7,8 @@
 
         window.cordova = {plugins: {}};
         window.plugins = window.plugins || {};
-
+        window.plugin = window.plugin || {};
+        
         // deviceready        
 
         var m_document_addEventListener = document.addEventListener,
@@ -76,6 +77,37 @@
             }
         };
 
+        // LOCAL NOTIFICATIONS
+
+        window.plugin.notification = {
+            
+            local: {
+                
+                hasPermisson:function() {
+                    
+                },
+                promptForPermission:function() {
+                    
+                },
+                cancelAll:function() {
+                    
+                },
+                add:function() {
+                    
+                },
+                cancel:function() {
+                    
+                }
+            }
+        };
+
+        // SLEEP MODE
+        
+        window.plugin.sleepMode = {
+            goToSleep:function() {
+                
+            }
+        };
 
         // SPLASH SCREEN
 
