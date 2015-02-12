@@ -13,6 +13,7 @@
         var m_document_addEventListener = document.addEventListener,
             m_window_open = window.open;
 
+        /*
         document.addEventListener = function (evt, handler, capture) {
             var e = evt.toLowerCase();
             if (e === 'deviceready') {
@@ -21,13 +22,15 @@
                 m_document_addEventListener.call(document, evt, handler, capture);
             }
         };
-
+        
+        
         window.setTimeout(function () {
             var e = document.createEvent('Events');
             e.initEvent("deviceready");
             document.dispatchEvent(e);
         }, 50);
-
+        */
+        
         // DEVICE
 
         window.device = {
@@ -187,8 +190,9 @@
             open:function() {},
             close:function() {},
             hideKeyboardAccessoryBar:function() {}
-        }
+        };
 
+        document.dispatchEvent("deviceready");
     }
 
 }());
