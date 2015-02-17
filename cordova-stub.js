@@ -224,7 +224,7 @@
             hideKeyboardAccessoryBar:function() {}
         };
 
-        document.dispatchEvent("deviceready");
+        document.dispatchEvent(new Event("deviceready"));
     }
 
 }());
